@@ -1,0 +1,11 @@
+
+--FUNCTION--
+- Develop an outline (site map) for the website
+- A page should be developed for every page identified on the site map
+- Some initial content should be placed in various pages
+--FRONTEND--
+- An initial design is created for the web site
+- The initial design is implemented for the website 
+--BACKEND--
+- A domain name and server are obtained
+- The website is deployed

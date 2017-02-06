@@ -1,0 +1,19 @@
+.content ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.content a {
+    color: black;
+    /*text-decoration: none;*/
+}
+
+.faqContainer {
+    padding: 10px 0px 10px 0px;
+
+}
+
+.faqQuestion {
+    border-bottom: solid;
+}
