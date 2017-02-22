@@ -28,3 +28,6 @@ var pastActivityButton = activityDrop.getChildren()[1].getChildren()[0];
 var ContactDrop = navBar.getChildren()[0].getChildren()[4];
 var ContactButton = ContactDrop.getChildren()[0];
 
+//Primary Content Variables.
+var primaryContent = document.getElementById("primaryContent");
+
