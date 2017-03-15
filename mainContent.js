@@ -17,19 +17,26 @@ $("#aboutButton").click(function(){
 });
 
 function changeRowBanner(content){
-	if(content = "about"){
-		$("#rowBannerImage").getChildren()[0].src= "DevResources/aboutBanner.jpg";
+	if(content == "about"){
+		$("#rowBannerImage").src= "DevResources/aboutBanner.jpg";
 	}
 }
 
 function changeMainContent(content){
-	if(content = "about"){
+	if(content == "about"){
 		$("#primaryContent").append("<h1>About Us</h1>"); 
 		$("#primaryContent").append("<h3>Who we are</h3>"); 
 		$("#primaryContent").append(
-			"<p> The Chinese Students and Scholars Association (CSSA) is a student organization at University of Richmond. Our operations are led by an executive council of a President, two Vice-Presidents, a Treasurer, and a Secretary. We also have a group of staff members who dedicate their time and effort to the operations of the CSSA. </p>"); 
+			"<p> The Chinese Students and Scholars Association (CSSA) is a " 
+            + "student organization at University of Richmond. Our operations"
+            + " are led by an executive council of a President, two Vice-Presidents," 
+            + " a Treasurer, and a Secretary. We also have a group of staff members"
+            + " who dedicate their time and effort to the operations of the CSSA. </p>"); 
 		$("#primaryContent").append("<h3>What we do</h3>"); 
-		$("#primaryContent").append("<p> We promote diversity on campus, provide and create opportunities, and facilitate information and cultural exchanges between China and the UR community. We organize events and activities for celebration of cultural festivals. We participate in UR events. We also co-sponsor and co-organize events with other student organizations. </p>"); 
+		$("#primaryContent").append("<p> We promote diversity on campus, provide and create" 
+            + " opportunities, and facilitate information and cultural exchanges between China" 
+            + " and the UR community. We organize events and activities for celebration of cultural" 
+            + " festivals. We participate in UR events. We also co-sponsor and co-organize events with other student organizations. </p>"); 
 		$("#primaryContent").append("<h3>What we do</h3>"); 
 		$("#primaryContent").append("<h3>What we do</h3>"); 
 		$("#primaryContent").append("<h3>What we do</h3>"); 
