@@ -12,6 +12,7 @@ body{
 	height: auto;
 	position: relative;
     overflow: hidden;
+    /*max-width: 90%;*/
 }
 
 .eventBox {
@@ -23,6 +24,7 @@ body{
     border-radius: 30px 30px 0px 0px;
     overflow: hidden;
     position: relative;
+    /*max-width: 90%;*/
 
 
 }
