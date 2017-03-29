@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0, no-cache">
+
+    <!--<title>Activities - URCSSA</title> TODO update with JS-->
+    <link href="main.css" rel="stylesheet" type="text/css" />
+    <link href="pageStyles/activityStyle.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+<body>
+    <div id  = "navbar">
+
+        <nav>
+            <ul>
+                <li class = "dropdown" id = "homeDrop"><a id = "homeButton" href = index.html>Home</a></li>
+                <li class = "dropdown" id = "aboutDrop">
+                    <a class = "drop_button" id = "aboutButton">About</a>
+                    <div class = "drop_content">
+                        <a href = mission.html id = "missonButton">Our Mission and Vision</a>
+                        <a href = team.html id = "teamButton">Meet Our Team</a>
+                    </div>
+
+
+                </li>
+
+                <li class = "dropdown" id = "infoDrop">
+                    <a href = information.html class = "drop_button" id = "infoButton">Information</a>
+                    <div class = "drop_content">
+                        <a href = resources.html id = "resourcesButton">Resources</a>
+                        <a href = faq.html id = "faqButton">FAQs</a>
+                    </div>
+
+
+                </li>
+
+                <li class = "dropdown">
+                    <!--make active js?-->
+                    <a href = activities.html class = "drop_button">Activities</a>
+                    <div class = "drop_content">
+                        <a href= past.html> Past Activities</a>
+                    </div>
+
+                </li>
+
+                <li><a href = contact.html>Contact us</a></li>
+
+                <li class = "navBarLogo">
+                    <a href = index.html><img id="logo1" src="DevResources/cssaLOGO.png" alt="logo1" height="30"/></a>
+                </li>
+            </ul>
+        </nav>
+
+    </div>
+    <div id = "rowBanner">
+        <div class = "rowBannerImg">
+            <!--make JS-->
+            <img id="rowBannerImage" />
+        </div>
+    </div>
+
+    <div id = "sideBarContainer">
+        <!--make JS-->
+        <ul>
+            <li><a href = activities.html class = "sideBar active">Activities</a></li>
+            <li><a href = past.html >Past Activities</a></li>
+        </ul>
+
+    </div>
+
+    <div id = "primaryContent">
+        <h2>Upcoming Activities</h2>
+
+        <div id = "eventContainer">
+            <div class = "eventBox">
+
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <div class="footerContent">
+            <div class="footerTitle">
+                <a href = "http://www.richmond.edu">
+                    University of Richmond
+                </a>
+            </div>
+            <div class="footerText">
+                28 Westhampton Way
+                <br>Richmond, VA 23173
+
+            </div>
+            <p class="footerText">
+                <small>
+                    ©URCSSA 2016-2017
+
+                </small>
+            </p>
+        </div>
+
+        <div class="footerContent">
+            <div class="footerTitle">
+                Follow Us
+            </div>
+
+            <div class = "footerContent">
+
+                <img id="qrcode" src="DevResources/qrCode.jpg" alt="qrcode" height="110"/>
+
+            </div>
+
+        </div>
+
+        <div class="footerContent">
+            <div class="footerTitle">
+                Contact Us
+            </div>
+            <div class = "footerContent">
+                <div class="iconWrapper">
+                    <a href="mailto:cssa@richmond.edu"> <img class="emailIcon" src="DevResources/emailIcon.png" alt="email" height="25"/> </a>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class = "footerContent">
+            <div class = "footerTitle">
+                Disclaimer
+            </div>
+
+            <div class="footerContent">
+                <a href = "disclaimer.html">View disclaimer</a>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="mainContent.js"></script>
+
+
+
+</body>
+</html>
