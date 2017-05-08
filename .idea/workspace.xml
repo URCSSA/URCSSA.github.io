@@ -36,7 +36,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="about.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="about.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/about.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1323">
@@ -46,10 +46,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="contents.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="contents.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contents.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3129">
+            <state relative-caret-position="724">
               <caret line="149" column="7" lean-forward="true" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
               <folding />
             </state>
@@ -60,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/mainContent.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="735">
-              <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+              <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -102,6 +102,7 @@
         <option value="$PROJECT_DIR$/contents.html" />
         <option value="$PROJECT_DIR$/about2.html" />
         <option value="$PROJECT_DIR$/mainContent.js" />
+        <option value="$PROJECT_DIR$/about.html" />
       </list>
     </option>
   </component>
@@ -147,6 +148,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="URCSSA.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URCSSA.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="URCSSA.github.io" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documents" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -263,12 +278,20 @@
       <workItem from="1490324698748" duration="629000" />
       <workItem from="1490752032224" duration="3015000" />
       <workItem from="1491504000978" duration="526000" />
-      <workItem from="1491515283528" duration="132000" />
+      <workItem from="1491515283528" duration="1189000" />
     </task>
+    <task id="LOCAL-00001" summary="First commit using WebStorm">
+      <created>1491515480338</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1491515480338</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4302000" />
+    <option name="totallyTimeSpent" value="5359000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -306,6 +329,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit using WebStorm" />
+    <option name="LAST_COMMIT_MESSAGE" value="First commit using WebStorm" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -415,20 +442,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/activities.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="182" column="27" lean-forward="false" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3962">
@@ -444,6 +457,16 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/contents.html" />
+    <entry file="file://$PROJECT_DIR$/mainContent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="35" column="58" lean-forward="false" selection-start-line="35" selection-start-column="58" selection-end-line="35" selection-end-column="58" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/about2.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -452,20 +475,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contents.html">
+    <entry file="file://$PROJECT_DIR$/activities.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3129">
-          <caret line="149" column="7" lean-forward="true" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mainContent.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="35" column="54" lean-forward="true" selection-start-line="35" selection-start-column="54" selection-end-line="35" selection-end-column="54" />
+        <state relative-caret-position="462">
+          <caret line="182" column="27" lean-forward="false" selection-start-line="182" selection-start-column="27" selection-end-line="182" selection-end-column="27" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -474,6 +493,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1323">
           <caret line="63" column="14" lean-forward="false" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contents.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="149" column="7" lean-forward="true" selection-start-line="149" selection-start-column="7" selection-end-line="149" selection-end-column="7" />
           <folding />
         </state>
       </provider>
