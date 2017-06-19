@@ -9,23 +9,63 @@
 </head>
 <body>
 
-<!--<nav id = "navbar"></nav>-->
+<!--<nav id="navbar"></nav>-->
+<div id="navbar">
+    <nav>
+        <ul>
+            <li class="dropdown" id="homeDrop"><a id="homeButton" href=index.html>Home</a></li>
+
+            <li class="dropdown" id="aboutDrop">
+                <!--<a href="javascrnavigateange(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
+                <a href=content.html class="drop_button clickable"> About</a>
+                <div class="drop_content">
+                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)">Our Mission and Vision</a>
+                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)">Meet Our Team</a>
+                </div>
+
+            </li>
+
+            <li class="dropdown" id="infoDrop">
+                <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>
+                <div class="drop_content">
+                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>
+                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
+                </div>
+
+            </li>
+
+            <li class="dropdown">
+                <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Activities</a>
+                <div class="drop_content">
+                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.PAST)"> Past Activities</a>
+                </div>
+
+            </li>
+
+            <li><a href="content.html" href="javascript:navigate(CONTENT_TABLE.CONTACT)" class="clickable">Contact us</a></li>
+
+            <li class="navBarLogo">
+                <a href=index.html><img id="logo1" src="devResources/cssaLOGO.png" alt="logo1" height="30"/></a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
 
 
-<div id = "homeRowWrapper">
-    <div id = "rowBanner">
-        <!--I am a banner.-->
+<div id="homeRowWrapper">
+    <div id="rowBanner">
 
-        <div class = "majorBannerImg">
-            <img src = "DevResources/homeBanner.jpg" />
+        <div class="majorBannerImg">
+            <img src="devResources/homeBanner.jpg" />
         </div>
 
 
     </div>
 
-    <div id = "primaryContentHomepage">
+    <div id="primaryContentHomepage">
         CHINESE STUDENTS AND SCHOLARS ASSOCIATION
-        <p id = "smaller">University of Richmond </p>
+        <p id="smaller">University of Richmond </p>
     </div>
 </div>
 
@@ -36,25 +76,25 @@
     </div>
 
     <div class="newsBox">
-        <a href = "team.html#teamInformation"><img src = "DevResources/ourTeam16.jpg"/></a>
+        <a href="team.html#teamInformation"><img src="devResources/ourTeam16.jpg"/></a>
     </div>
 
     <div class="newsBox">
-        <a href = "activities.html#welcome2016pre"><img src = "DevResources/indexWeWantYou.jpg"/></a>
+        <a href="activities.html#welcome2016pre"><img src="devResources/indexWeWantYou.jpg"/></a>
     </div>
 
     <div class="newsBox">
-        <a href = "past.html#release1.0"><img src = "DevResources/siteRelease.jpg"/></a>
+        <a href="past.html#release1.0"><img src="devResources/siteRelease.jpg"/></a>
     </div>
     <div class="newsBox">
-        <a href = "past.html#handbook2016"><img src = "DevResources/handbookMockup.jpg" /></a>
+        <a href="past.html#handbook2016"><img src="devResources/handbookMockup.jpg" /></a>
 
     </div>
     <div class="newsBox">
-        <a href = "past.html#voice2016"><img src = "DevResources/voiceofva.jpg" /></a>
+        <a href="past.html#voice2016"><img src="devResources/voiceofva.jpg" /></a>
     </div>
     <div class="newsBox">
-        <a href = "past.html#cny2016"><img src = "DevResources/indexTemp.jpg" /></a>
+        <a href="past.html#cny2016"><img src="devResources/indexTemp.jpg" /></a>
     </div>
 
 
@@ -62,63 +102,11 @@
 
 
 
-<div id  = "navbar">
-    <nav>
-
-        <ul>
-            <li class = "dropdown"><a href = index.html  class = "drop_button active">Home</a></li>
-            <li class = "dropdown">
-                <a href = about.html class = "drop_button">About</a>
-                <div class = "drop_content">
-                    <a href = mission.html>Our Mission and Vision</a>
-                    <a href = team.html>Meet Our Team</a>
-                </div>
-
-                <!--<ul>-->
-                <!--<li><a href = mission.html>Our Mission and Vision</a></li>-->
-                <!--<li><a href = team.html>Meet Our Team</a></li>-->
-                <!--</ul>-->
-
-            </li>
-
-            <li class = "dropdown" >
-                <a href = information.html class = "drop_button">Information</a>
-                <div class = "drop_content">
-                    <a href = resources.html>Resources</a>
-                    <a href = faq.html>FAQs</a>
-                </div>
-
-                <!--<ul>-->
-                <!--<li><a href = resources.html>Resources</a></li>-->
-                <!--<li><a href = links.html>Useful Links</a></li>-->
-                <!--</ul>-->
-            </li>
-
-            <li class = "dropdown">
-                <a href = activities.html class = "drop_button">Activities</a>
-                <div class = "drop_content">
-                    <a href= past.html> Past Activities</a>
-                </div>
-                <!--<ul>-->
-                <!--<li><a href= past.html> Past Activities</a></li>-->
-                <!--</ul>-->
-            </li>
-
-            <li><a href = contact.html>Contact us</a></li>
-
-            <li class = "navBarLogo">
-                <a href = index.html><img id="logo1" src="DevResources/cssaLOGO.png" alt="logo1" height="30"/></a>
-            </li>
-
-        </ul>
-
-    </nav>
-</div>
 
 <div class="footer">
     <div class="footerContent">
         <div class="footerTitle">
-            <a href = "http://www.richmond.edu">
+            <a href="http://www.richmond.edu">
                 University of Richmond
             </a>
         </div>
@@ -140,9 +128,9 @@
             Follow Us
         </div>
 
-        <div class = "footerContent">
+        <div class="footerContent">
 
-            <img id="qrcode" src="DevResources/qrCode.jpg" alt="qrcode" height="110"/>
+            <img id="qrcode" src="devResources/qrCode.jpg" alt="qrcode" height="110"/>
 
         </div>
 
@@ -152,34 +140,33 @@
         <div class="footerTitle">
             Contact Us
         </div>
-        <div class = "footerContent">
+        <div class="footerContent">
             <div class="iconWrapper">
-                <a href="mailto:cssa@richmond.edu"> <img class="emailIcon" src="DevResources/emailIcon.png" alt="email" height="25"/> </a>
+                <a href="mailto:cssa@richmond.edu"> <img class="emailIcon" src="devResources/emailIcon.png" alt="email" height="25"/> </a>
 
             </div>
 
         </div>
     </div>
 
-    <div class = "footerContent">
-        <div class = "footerTitle">
+    <div class="footerContent">
+        <div class="footerTitle">
             Disclaimer
         </div>
 
         <div class="footerContent">
-            <a href = "disclaimer.html">View disclaimer</a>
+            <a href="disclaimer.html">View disclaimer</a>
         </div>
     </div>
 
 
 </div>
 
-
-
-<!--<script src = "navBar.js"></script>-->
-
 <!--<script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="showOnScroll.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="getMainContent.js"></script>
 </body>
 </html>
 

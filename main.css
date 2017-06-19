@@ -4,7 +4,7 @@ head{
 body{
     background-color: #f9f9f9;
     font-family: "Avenir","Futura LT Light","Georgia","Garamond","Verdana";
-    /*src: url('DevResources/Futura LT Light.ttf');*/
+    /*src: url('devResources/Futura LT Light.ttf');*/
 
     margin-top: 0px;
     margin-right: 0px;
@@ -13,7 +13,7 @@ body{
 }
 
 @font-face {
-    src: url('DevResources/Futura LT Light.ttf');
+    src: url('devResources/Futura LT Light.ttf');
 
 }
 
