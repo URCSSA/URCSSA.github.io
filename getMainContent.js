@@ -51,6 +51,7 @@ var CONTENT_TABLE = {
     },
     CONTACT: {
 		banner: DEV_SRC_LOCATION + "contactBanner.jpg",
+        sideBar: CONTENT_LOCATION + "contact.html #sideBar",
         content: CONTENT_LOCATION + "contact.html #content"
 	}
 };
@@ -67,12 +68,12 @@ function navigate(content) {
     if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
         || content == CONTENT_TABLE.ABOUT.MISSION) {
 
-        $("#sideBarContainer").load("pageContents/about.html #sideBar");
+        $("#sideBarContainer").load(CONTENT_TABLE.ABOUT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ABOUT.banner);
         switch (content) {
             // default:
-            // if (window.location != "about.html")
-            //     window.location.href = "about.html";
+            // if (window.location != "content.html")
+            //     window.location.href = "content.html";
 
             case CONTENT_TABLE.ABOUT.LANDING:
                 $("#primaryContent").load(CONTENT_TABLE.ABOUT.LANDING.content);
@@ -90,7 +91,7 @@ function navigate(content) {
     else if (content == CONTENT_TABLE.INFORMATION.LANDING || content == CONTENT_TABLE.INFORMATION.RESOURCES
         || content == CONTENT_TABLE.INFORMATION.FAQ) {
 
-        $("#sideBarContainer").load("pageContents/information.html #sideBar");
+        $("#sideBarContainer").load(CONTENT_TABLE.INFORMATION.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.INFORMATION.banner);
 
         switch (content) {
@@ -111,7 +112,7 @@ function navigate(content) {
         }
     }
     else if (content == CONTENT_TABLE.ACTIVITIES.LANDING || content == CONTENT_TABLE.ACTIVITIES.PAST) {
-        $("#sideBarContainer").load("pageContents/activities.html #sideBar");
+        $("#sideBarContainer").load(CONTENT_TABLE.ACTIVITIES.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ACTIVITIES.banner);
 
         switch (content) {
@@ -126,7 +127,7 @@ function navigate(content) {
         }
     }
     else if (content == CONTENT_TABLE.CONTACT) {
-        $("#sideBarContainer").load("pageContents/contact.html #sideBar");
+        $("#sideBarContainer").load(CONTENT_TABLE.CONTACT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.CONTACT.banner);
         $("#primaryContent").load(CONTENT_TABLE.CONTACT.content);
     }
