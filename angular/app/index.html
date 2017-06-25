@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
+  <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="../main.css"/>
+  <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#!/home">home</a></li>
+    <li><a href="#!/about">about</a></li>
+    <li><a href="#!/about/team">team</a></li>
+    <li><a href="#!/about/mission">mission</a></li>
+
+    <li><a href="#!/view3">view3</a></li>
+  </ul>
+
+  <!--<ul>-->
+    <!--<li class="dropdown menu" id="homeDrop"><a id="homeButton" href=index.html>home</a></li>-->
+
+    <!--<li class="dropdown" id="aboutDrop">-->
+      <!--<a href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
+      <!--<div class="drop_content">-->
+        <!--<a href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)">Our Mission and Vision</a>-->
+        <!--<a href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)">Meet Our Team</a>-->
+      <!--</div>-->
+
+    <!--</li>-->
+
+    <!--<li class="dropdown" id="infoDrop">-->
+      <!--<a href="javascript:navigate(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>-->
+      <!--<div class="drop_content">-->
+        <!--<a href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>-->
+        <!--<a href="javascript:navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>-->
+      <!--</div>-->
+
+    <!--</li>-->
+
+    <!--<li class="dropdown">-->
+      <!--<a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Activities</a>-->
+      <!--<div class="drop_content">-->
+        <!--<a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.PAST)" id="pastButton"> Past Activities</a>-->
+      <!--</div>-->
+
+    <!--</li>-->
+
+    <!--<li><a href="javascript:navigate(CONTENT_TABLE.CONTACT)" class="clickable">Contact us</a></li>-->
+
+    <!--<li class="navBarLogo">-->
+      <!--<a href=index.html><img id="logo1" src="devResources/cssaLOGO.png" alt="logo1" height="30"/></a>-->
+    <!--</li>-->
+  <!--</ul>-->
+
+
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <div ng-view></div>
+
+  <div>Angular seed app: v<span app-version></span></div>
+
+  <!-- In production use:
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+  -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="home/home.js"></script>
+  <script src="about/about.js"></script>
+  <script src="view3/view3.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>
