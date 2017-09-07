@@ -22,7 +22,7 @@ var CONTENT_TABLE = {
         TEAM: {
             content: CONTENT_LOCATION + "about.html #teamInformation"
         },
-        sideBar: "pageContents/about.html #sideBar",
+        sideBar: "pageContents/activities.html #sideBar",
         banner: DEV_SRC_LOCATION + "aboutBanner.jpg"
     },
     INFORMATION: {
