@@ -64,13 +64,14 @@ var CONTENT_TABLE = {
 // });
 
 function navigate(content) {
+    var req = content;
 
-    if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
-        || content == CONTENT_TABLE.ABOUT.MISSION) {
+    if (req == CONTENT_TABLE.ABOUT.LANDING || req == CONTENT_TABLE.ABOUT.TEAM
+        || req == CONTENT_TABLE.ABOUT.MISSION) {
 
         $("#sideBarContainer").load(CONTENT_TABLE.ABOUT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ABOUT.banner);
-        switch (content) {
+        switch (req) {
             // default:
             // if (window.location != "content.html")
             //     window.location.href = "content.html";
@@ -88,13 +89,13 @@ function navigate(content) {
                 break;
         }
     }
-    else if (content == CONTENT_TABLE.INFORMATION.LANDING || content == CONTENT_TABLE.INFORMATION.RESOURCES
-        || content == CONTENT_TABLE.INFORMATION.FAQ) {
+    else if (req == CONTENT_TABLE.INFORMATION.LANDING || req == CONTENT_TABLE.INFORMATION.RESOURCES
+        || req == CONTENT_TABLE.INFORMATION.FAQ) {
 
         $("#sideBarContainer").load(CONTENT_TABLE.INFORMATION.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.INFORMATION.banner);
 
-        switch (content) {
+        switch (req) {
             // default:
             //     if (window.location != "information.html")
             //         window.location.href = "information.html";
@@ -111,11 +112,11 @@ function navigate(content) {
                 break;
         }
     }
-    else if (content == CONTENT_TABLE.ACTIVITIES.LANDING || content == CONTENT_TABLE.ACTIVITIES.PAST) {
+    else if (req == CONTENT_TABLE.ACTIVITIES.LANDING || req == CONTENT_TABLE.ACTIVITIES.PAST) {
         $("#sideBarContainer").load(CONTENT_TABLE.ACTIVITIES.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ACTIVITIES.banner);
 
-        switch (content) {
+        switch (req) {
             case CONTENT_TABLE.ACTIVITIES.LANDING:
                 $("#primaryContent").load(CONTENT_TABLE.ACTIVITIES.LANDING.content);
                 break;
@@ -126,7 +127,7 @@ function navigate(content) {
                 break;
         }
     }
-    else if (content == CONTENT_TABLE.CONTACT) {
+    else if (req == CONTENT_TABLE.CONTACT) {
         $("#sideBarContainer").load(CONTENT_TABLE.CONTACT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.CONTACT.banner);
         $("#primaryContent").load(CONTENT_TABLE.CONTACT.content);
