@@ -4,6 +4,7 @@ var sideBarContainer=document.getElementById("sideBarContainer");
 var navBar=document.getElementById("navBar");
 var CONTENT_LOCATION="pageContents/";
 var DEV_SRC_LOCATION="devResources/";
+sessionStorage.setItem('content', 'empty');
 
 //Global enum of all pages
 var CONTENT_TABLE = {
@@ -63,10 +64,25 @@ var CONTENT_TABLE = {
 //     navigate(CONTENT_TABLE.ABOUT.LANDING);
 // });
 
+$(window).scroll(function() {
+    sessionStorage.scrollTop = $(this).scrollTop();
+});
+
+$(document).ready(function() {
+    if (sessionStorage.scrollTop != "undefined") {
+        $(window).scrollTop(sessionStorage.scrollTop);
+        var temp = sessionStorage.getItem('content');
+        var content = $.parseJSON(temp);
+        $(this).navigate(content);
+    }
+});
+
+
 function navigate(content) {
 
     if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
         || content == CONTENT_TABLE.ABOUT.MISSION) {
+        sessionStorage.setItem('content', JSON.stringify(content));
 
         $("#sideBarContainer").load(CONTENT_TABLE.ABOUT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ABOUT.banner);
@@ -91,6 +107,8 @@ function navigate(content) {
     else if (content == CONTENT_TABLE.INFORMATION.LANDING || content == CONTENT_TABLE.INFORMATION.RESOURCES
         || content == CONTENT_TABLE.INFORMATION.FAQ) {
 
+        sessionStorage.setItem('content', JSON.stringify(content));
+
         $("#sideBarContainer").load(CONTENT_TABLE.INFORMATION.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.INFORMATION.banner);
 
@@ -112,6 +130,7 @@ function navigate(content) {
         }
     }
     else if (content == CONTENT_TABLE.ACTIVITIES.LANDING || content == CONTENT_TABLE.ACTIVITIES.PAST) {
+        sessionStorage.setItem('content', JSON.stringify(content));
         $("#sideBarContainer").load(CONTENT_TABLE.ACTIVITIES.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ACTIVITIES.banner);
 
@@ -127,8 +146,10 @@ function navigate(content) {
         }
     }
     else if (content == CONTENT_TABLE.CONTACT) {
+        sessionStorage.setItem('content', JSON.stringify(content));
         $("#sideBarContainer").load(CONTENT_TABLE.CONTACT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.CONTACT.banner);
         $("#primaryContent").load(CONTENT_TABLE.CONTACT.content);
     }
+
 }
