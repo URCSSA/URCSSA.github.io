@@ -16,30 +16,30 @@
             <li class="dropdown" id="homeDrop"><a id="homeButton" href=index.html>Home</a></li>
 
             <li class="dropdown" id="aboutDrop">
-                <!--<a href="javascrnavigateange(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
-                <a href=content.html class="drop_button clickable"> About</a>
+                <!--<a href="javascrstoreContentange(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
+                <a href=content.html onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>
                 <div class="drop_content">
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)">Our Mission and Vision</a>
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)">Meet Our Team</a>
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)">Contact Us</a>
+                    <a href="content.html" onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.MISSION);">Our Mission and Vision</a>
+                    <a href="content.html" onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.TEAM);">Meet Our Team</a>
+                    <a href="content.html" onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.CONTACT);">Contact Us</a>
                 </div>
             </li>
 
             <li class="dropdown" id="infoDrop">
-                <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>
+                <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>
                 <div class="drop_content">
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)" id="handbookButton">Student Handbook</a>
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
+                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.HANDBOOK)" id="handbookButton">Student Handbook</a>
+                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>
+                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
                 </div>
 
             </li>
 
             <li class="dropdown">
-                <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Events</a>
+                <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Events</a>
                 <div class="drop_content">
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.PAST)"> Upcoming Events</a>
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.PAST)"> Past Events</a>
+                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.ACTIVITIES.UPCOMING)"> Upcoming Events</a>
+                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.ACTIVITIES.PAST)"> Past Events</a>
                 </div>
 
             </li>

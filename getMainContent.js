@@ -22,6 +22,9 @@ var CONTENT_TABLE = {
         TEAM: {
             content: CONTENT_LOCATION + "about.html #teamInformation"
         },
+        CONTACT: {
+            content: CONTENT_LOCATION + "about.html #contact"
+        },
         sideBar: "pageContents/about.html #sideBar",
         banner: DEV_SRC_LOCATION + "aboutBanner.jpg"
     },
@@ -29,6 +32,9 @@ var CONTENT_TABLE = {
         LANDING: {
         	content: CONTENT_LOCATION + "information.html #information"
 		},
+        HANDBOOK: {
+            content: CONTENT_LOCATION + "information.html #resources"
+        },
         RESOURCES: {
         	content: CONTENT_LOCATION + "information.html #resources"
 		},
@@ -42,18 +48,21 @@ var CONTENT_TABLE = {
         LANDING: {
             content: CONTENT_LOCATION + "activities.html #active"
         },
+        UPCOMING: {
+            content: CONTENT_LOCATION + "activities.html #upcoming"
+        },
         PAST: {
             content: CONTENT_LOCATION + "activities.html #past"
         },
         sideBar: "pageContents/activities.html #sideBar",
         banner: DEV_SRC_LOCATION + "activitiesBanner16.jpg"
 
-    },
-    CONTACT: {
-		banner: DEV_SRC_LOCATION + "contactBanner.jpg",
-        sideBar: CONTENT_LOCATION + "contact.html #sideBar",
-        content: CONTENT_LOCATION + "contact.html #content"
-	}
+    }
+    // CONTACT: {
+	// 	banner: DEV_SRC_LOCATION + "contactBanner.jpg",
+     //    sideBar: CONTENT_LOCATION + "contact.html #sideBar",
+     //    content: CONTENT_LOCATION + "contact.html #content"
+	// }
 };
 //
 // $("#clickable").click(function() {
@@ -65,8 +74,10 @@ var CONTENT_TABLE = {
 
 function navigate(content) {
 
+    console.log("Check");
+
     if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
-        || content == CONTENT_TABLE.ABOUT.MISSION) {
+        || content == CONTENT_TABLE.ABOUT.MISSION || content == CONTENT_TABLE.ABOUT.CONTACT) {
 
         $("#sideBarContainer").load(CONTENT_TABLE.ABOUT.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ABOUT.banner);
@@ -83,6 +94,9 @@ function navigate(content) {
                 break;
             case CONTENT_TABLE.ABOUT.TEAM:
                 $("#primaryContent").load(CONTENT_TABLE.ABOUT.TEAM.content);
+                break;
+            case CONTENT_TABLE.ABOUT.CONTACT:
+                $("#primaryContent").load(CONTENT_TABLE.ABOUT.CONTACT.content);
                 break;
             default:
                 break;
@@ -126,9 +140,20 @@ function navigate(content) {
                 break;
         }
     }
-    else if (content == CONTENT_TABLE.CONTACT) {
-        $("#sideBarContainer").load(CONTENT_TABLE.CONTACT.sideBar);
-        $("#rowBannerImage").attr("src", CONTENT_TABLE.CONTACT.banner);
-        $("#primaryContent").load(CONTENT_TABLE.CONTACT.content);
-    }
+    // else if (content == CONTENT_TABLE.CONTACT) {
+    //     $("#sideBarContainer").load(CONTENT_TABLE.CONTACT.sideBar);
+    //     $("#rowBannerImage").attr("src", CONTENT_TABLE.CONTACT.banner);
+    //     $("#primaryContent").load(CONTENT_TABLE.CONTACT.content);
+    // }
+}
+
+//Store content name called by index page
+function storeContent(currentContent){
+    console.log("Damn");
+    current = currentContent;
+}
+
+function loadContent(){
+    // console.log("Damn");
+    navigate(current);
 }
