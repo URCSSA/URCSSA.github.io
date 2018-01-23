@@ -4,6 +4,7 @@ var sideBarContainer=document.getElementById("sideBarContainer");
 var navBar=document.getElementById("navBar");
 var CONTENT_LOCATION="pageContents/";
 var DEV_SRC_LOCATION="devResources/";
+var current;
 
 //Global enum of all pages
 var CONTENT_TABLE = {
@@ -64,7 +65,7 @@ var CONTENT_TABLE = {
 // });
 
 function navigate(content) {
-
+console.log("Check");
     if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
         || content == CONTENT_TABLE.ABOUT.MISSION) {
 
