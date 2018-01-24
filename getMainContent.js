@@ -8,9 +8,7 @@ var DEV_SRC_LOCATION="devResources/";
 //Global enum of all pages
 var CONTENT_TABLE = {
     HOME: {
-        homeRowWrapper: CONTENT_LOCATION + "index.html #homeRowWrapper",
-        latestNewsContainer: CONTENT_LOCATION + "index.html #latestNewsContainer",
-        banner: DEV_SRC_LOCATION + "homeBanner.jgp"
+        content: CONTENT_LOCATION + "home.html #home"
     },
     ABOUT: {
         LANDING: {
@@ -25,8 +23,8 @@ var CONTENT_TABLE = {
         CONTACT: {
             content: CONTENT_LOCATION + "about.html #contact"
         },
-        sideBar: "pageContents/about.html #sideBar",
-        banner: DEV_SRC_LOCATION + "aboutBanner.jpg"
+        banner: "pageContents/about.html #rowBanner",
+        sideBar: "pageContents/about.html #sideBar"
     },
     INFORMATION: {
         LANDING: {
@@ -56,7 +54,6 @@ var CONTENT_TABLE = {
         },
         sideBar: "pageContents/activities.html #sideBar",
         banner: DEV_SRC_LOCATION + "activitiesBanner16.jpg"
-
     }
     // CONTACT: {
 	// 	banner: DEV_SRC_LOCATION + "contactBanner.jpg",
@@ -64,6 +61,7 @@ var CONTENT_TABLE = {
      //    content: CONTENT_LOCATION + "contact.html #content"
 	// }
 };
+
 //
 // $("#clickable").click(function() {
 //     var href=$(this).attr("i.html");
@@ -73,18 +71,22 @@ var CONTENT_TABLE = {
 // });
 
 function navigate(content) {
-
-    console.log("Check");
-
-    if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
+    loadIndex();
+    // console.log("Check");
+    if(content == CONTENT_TABLE.HOME){
+        $("#change").load(CONTENT_TABLE.HOME.content);
+    }
+    else if (content == CONTENT_TABLE.ABOUT.LANDING || content == CONTENT_TABLE.ABOUT.TEAM
         || content == CONTENT_TABLE.ABOUT.MISSION || content == CONTENT_TABLE.ABOUT.CONTACT) {
-
+        console.log("Check!");
+        // $("#banner").load("index.html #infoDrop");
+        // $("#banner").innerHTML = "Hello World";
+        $("#banner").load(CONTENT_TABLE.ABOUT.banner);
         $("#sideBarContainer").load(CONTENT_TABLE.ABOUT.sideBar);
-        $("#rowBannerImage").attr("src", CONTENT_TABLE.ABOUT.banner);
         switch (content) {
             // default:
-            // if (window.location != "content.html")
-            //     window.location.href = "content.html";
+            // if (window.location != "index.html")
+            //     window.location.href = "index.html";
 
             case CONTENT_TABLE.ABOUT.LANDING:
                 $("#primaryContent").load(CONTENT_TABLE.ABOUT.LANDING.content);
@@ -147,13 +149,7 @@ function navigate(content) {
     // }
 }
 
-//Store content name called by index page
-function storeContent(currentContent){
-    console.log("Damn");
-    current = currentContent;
-}
-
-function loadContent(){
+function loadIndex(){
     // console.log("Damn");
-    navigate(current);
+    $("#change").load("index.html #indexContent");
 }

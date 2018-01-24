@@ -1,169 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Home - URCSSA </title>
-    <link href="main.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" content = "no-cache">
+    <title>About - URCSSA</title>
+    <link href="pageStyles/main.css" rel="stylesheet" type="text/css" />
     <link href="pageStyles/indexStyle.css" rel="stylesheet" type="text/css" />
-
 </head>
-<body>
-
-<!--<nav id="navbar"></nav>-->
-<div id="navbar">
-    <nav>
-        <ul>
-            <li class="dropdown" id="homeDrop"><a id="homeButton" href=index.html>Home</a></li>
-
-            <li class="dropdown" id="aboutDrop">
-                <!--<a href="javascrstoreContentange(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
-                <a href=content.html onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>
-                <div class="drop_content">
-                    <a href="content.html" onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.MISSION);">Our Mission and Vision</a>
-                    <a href="content.html" onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.TEAM);">Meet Our Team</a>
-                    <a href="content.html" onclick="javascript:storeContent(CONTENT_TABLE.ABOUT.CONTACT);">Contact Us</a>
-                </div>
-            </li>
-
-            <li class="dropdown" id="infoDrop">
-                <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>
-                <div class="drop_content">
-                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.HANDBOOK)" id="handbookButton">Student Handbook</a>
-                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>
-                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
-                </div>
-
-            </li>
-
-            <li class="dropdown">
-                <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Events</a>
-                <div class="drop_content">
-                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.ACTIVITIES.UPCOMING)"> Upcoming Events</a>
-                    <a href="content.html" href="javascript:storeContent(CONTENT_TABLE.ACTIVITIES.PAST)"> Past Events</a>
-                </div>
-
-            </li>
-
-            <li class="navBarLogo">
-                <a href=index.html><img id="logo1" src="devResources/cssaLOGO.png" alt="logo1" height="30"/></a>
-            </li>
-        </ul>
-    </nav>
-
-</div>
 
 
-<div id="homeRowWrapper">
-    <div id="rowBanner">
+<body onload="navigate(CONTENT_TABLE.HOME)">
+    <!--<nav id = "navbar"></nav>-->
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li class="dropdown" id="homeDrop"><a id="homeButton" href="javascript:navigate(CONTENT_TABLE.HOME)">Home</a></li>
 
-        <div class="majorBannerImg">
-            <img src="devResources/homeBanner.jpg" />
-        </div>
+                <li class="dropdown" id="aboutDrop">
+                    <!--<a href="javascrnavigateange(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
+                    <a href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>
+                    <div class="drop_content">
+                        <a href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)">Our Mission and Vision</a>
+                        <a href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)">Meet Our Team</a>
+                        <a href="javascript:navigate(CONTENT_TABLE.ABOUT.CONTACT)">Contact Us</a>
+                    </div>
+                </li>
 
+                <li class="dropdown" id="infoDrop">
+                    <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>
+                    <div class="drop_content">
+                        <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.HANDBOOK)" id="handbookButton">Student Handbook</a>
+                        <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>
+                        <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
+                    </div>
+
+                </li>
+
+                <li class="dropdown">
+                    <a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Events</a>
+                    <div class="drop_content">
+                        <a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.UPCOMING)"> Upcoming Events</a>
+                        <a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.PAST)"> Past Events</a>
+                    </div>
+
+                </li>
+
+                <li class="navBarLogo">
+                    <a href=pageContents/home.html><img id="logo1" src="devResources/cssaLOGO.png" alt="logo1" height="30"/></a>
+                </li>
+            </ul>
+        </nav>
 
     </div>
 
-    <div id="primaryContentHomepage">
-        CHINESE STUDENTS AND SCHOLARS ASSOCIATION
-        <p id="smaller">University of Richmond </p>
-    </div>
-</div>
+    <div id="change">
+        <div id="indexContent">
+            <div id="banner">
 
-<!--TODO Implement the new 6 pieces here-->
+            </div>
 
-<!--<div id="latestNewsContainer">-->
-    <!--<div id="latestNewsTitle">-->
-        <!--Latest News-->
-    <!--</div>-->
+            <div id="sideBarContainer">
 
-    <!--<div class="newsBox">-->
-        <!--<a href="team.html#teamInformation"><img src="devResources/ourTeam16.jpg"/></a>-->
-    <!--</div>-->
+            </div>
 
-    <!--<div class="newsBox">-->
-        <!--<a href="activities.html#welcome2016pre"><img src="devResources/indexWeWantYou.jpg"/></a>-->
-    <!--</div>-->
+            <div id="primaryContent">
 
-    <!--<div class="newsBox">-->
-        <!--<a href="past.html#release1.0"><img src="devResources/siteRelease.jpg"/></a>-->
-    <!--</div>-->
-    <!--<div class="newsBox">-->
-        <!--<a href="past.html#handbook2016"><img src="devResources/handbookMockup.jpg" /></a>-->
-
-    <!--</div>-->
-    <!--<div class="newsBox">-->
-        <!--<a href="past.html#voice2016"><img src="devResources/voiceofva.jpg" /></a>-->
-    <!--</div>-->
-    <!--<div class="newsBox">-->
-        <!--<a href="past.html#cny2016"><img src="devResources/indexTemp.jpg" /></a>-->
-    <!--</div>-->
-<!--</div>-->
-
-
-<div class="footer">
-    <div class="footerContent">
-        <div class="footerTitle">
-            <a href="http://www.richmond.edu">
-                University of Richmond
-            </a>
+            </div>
         </div>
-        <div class="footerText">
-            28 Westhampton Way
-            <br>Richmond, VA 23173
-
-        </div>
-        <p class="footerText">
-            <small>
-                ©URCSSA 2016-2017
-
-            </small>
-        </p>
     </div>
 
-    <div class="footerContent">
-        <div class="footerTitle">
-            Follow Us
+    <div class="footer">
+        <div class="footerContent">
+            <div class="footerTitle">
+                <a href = "http://www.richmond.edu">
+                    University of Richmond
+                </a>
+            </div>
+            <div class="footerText">
+                28 Westhampton Way
+                <br>Richmond, VA 23173
+
+            </div>
+            <p class="footerText">
+                <small>
+                ©URCSSA 2017-2018
+
+                </small>
+            </p>
         </div>
 
         <div class="footerContent">
+            <div class="footerTitle">
+                Follow Us
+            </div>
 
-            <img id="qrcode" src="devResources/qrCode.jpg" alt="qrcode" height="110"/>
+            <div class = "footerContent">
 
-        </div>
-
-    </div>
-
-    <div class="footerContent">
-        <div class="footerTitle">
-            Contact Us
-        </div>
-        <div class="footerContent">
-            <div class="iconWrapper">
-                <a href="mailto:cssa@richmond.edu"> <img class="emailIcon" src="devResources/emailIcon.png" alt="email" height="25"/> </a>
+                <img id="qrcode" src="devResources/qrCode.jpg" alt="qrcode" height="110"/>
 
             </div>
 
         </div>
-    </div>
-
-    <div class="footerContent">
-        <div class="footerTitle">
-            Disclaimer
-        </div>
 
         <div class="footerContent">
-            <a href="disclaimer.html">View disclaimer</a>
+            <div class="footerTitle">
+                    Contact Us
+            </div>
+            <div class = "footerContent">
+                <div class="iconWrapper">
+                    <a href="mailto:cssa@richmond.edu"> <img class="emailIcon" src="devResources/emailIcon.png" alt="email" height="25"/> </a>
+
+                </div>
+
+            </div>
         </div>
+
+        <div class = "footerContent">
+            <div class = "footerTitle">
+                Disclaimer
+            </div>
+
+            <div class="footerContent">
+                <a href = "disclaimer.html">View disclaimer</a>
+            </div>
+        </div>
+
+
     </div>
-
-
-</div>
-
-<!--<script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="showOnScroll.js"></script>-->
-
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-<script type="text/javascript" src="getMainContent.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="getMainContent.js"></script>
 </body>
 </html>
-
