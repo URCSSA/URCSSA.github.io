@@ -73,8 +73,8 @@ console.log("Check");
         $("#rowBannerImage").attr("src", CONTENT_TABLE.ABOUT.banner);
         switch (content) {
             // default:
-            // if (window.location != "content.html")
-            //     window.location.href = "content.html";
+            // if (window.location != "index.html")
+            //     window.location.href = "index.html";
 
             case CONTENT_TABLE.ABOUT.LANDING:
                 $("#primaryContent").load(CONTENT_TABLE.ABOUT.LANDING.content);
