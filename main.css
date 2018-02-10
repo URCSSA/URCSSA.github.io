@@ -3,7 +3,7 @@ head{
 }
 body{
     background-color: #f9f9f9;
-    font-family: "Avenir","Futura LT Light","Georgia","Garamond","Verdana";
+    font-family: "Avenir","Futura LT Light","Georgia","Garamond","Verdana", "Brush Script MT";
     /*src: url('devResources/Futura LT Light.ttf');*/
 
     margin-top: 0px;
@@ -32,7 +32,9 @@ h2 {
 h3 {
     color: black;
     font-family: "Verdana";
+
 }
+
 
 a{
     color: #4386C9;
@@ -301,7 +303,22 @@ nav .drop_button.active {
     background-color: transparent;
 }
 
+/*#content.contact {*/
+
+/*}*/
+
+/*#container.text-center. h3{*/
+    /*!*color: black;*!*/
+    /*!*font-family: "Verdana";*!*/
+    /*font-family: Brush Script MT, cursive;*/
+    /*font-size: 14px;*/
+    /*font-style: normal;*/
+    /*font-variant: normal;*/
+    /*font-weight: 500;*/
+    /*line-height: 15.4px;*/
+/*}*/
 
 footer{
     clear: both;
 }
+

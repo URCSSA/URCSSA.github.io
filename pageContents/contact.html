@@ -1,22 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .container-fluid {
+        padding: 60px 50px;
+    }
+
+    .bg-grey {
+        background-color: #f6f6f6;
+    }
+    .item span {
+        font-style: normal;
+    }
+
+    .panel-footer h3 {
+        font-size: 32px;
+    }
+    .panel-footer h4 {
+        color: #aaa;
+        font-size: 14px;
+    }
+
+
+</style>
+</head>
 <div id="content">
 
-    <h1>Contact Us</h1>
 
-    <!--<h3>For technical help scream Kevin Chen loudly three times!!!</h3>-->
-    <p>
-        We appreciate your interest! Please reach out to us if you would like to:
-    <ul>
-        <li>Propose an activity or collaboration;</li>
-        <li>Comment on a previous activity; or</li>
-        <li>Make a general inquiry.</li>
-    </ul>
-    </p>
 
-    <p>
-        <strong>Email: </strong><a href="mailto: cssa@richmond.edu">cssa@richmond.edu</a>
-    </p>
+    <!--&lt;!&ndash;<h3>For technical help scream Kevin Chen loudly three times!!!</h3>&ndash;&gt;-->
+
+    <!--<h1>Contact Us</h1>-->
+    <!--<p>-->
+        <!--We appreciate your interest! Please reach out to us if you would like to:-->
+    <!--<ul>-->
+        <!--<li>Propose an activity or collaboration;</li>-->
+        <!--<li>Comment on a previous activity; or</li>-->
+        <!--<li>Make a general inquiry.</li>-->
+    <!--</ul>-->
+    <!--</p>-->
+
+    <!--<p>-->
+        <!--<strong>Email: </strong><a href="mailto: cssa@richmond.edu">cssa@richmond.edu</a>-->
+    <!--</p>-->
+
+    <!--our css overrides bootstrap, won't work from index.html-->
+    <div class="container-fluid bg-grey">
+        <div class="row">
+            <div class="col-sm-5">
+                <p>
+                    We appreciate your interest! Please reach out to us if you would like to:
+
+                    Propose an activity or collaboration;
+                    Comment on a previous activity; Or
+                    make a general inquiry.
+
+                </p>
+                <p><span class="glyphicon glyphicon-map-marker"></span> Richmond, VA</p>
+                <p><span class="glyphicon glyphicon-envelope"></span> cssa@richmond.edu</p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-default pull-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <div id="sideBar">

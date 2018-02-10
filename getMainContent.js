@@ -10,7 +10,8 @@ var current;
 var CONTENT_TABLE = {
     HOME: {
         homeRowWrapper: CONTENT_LOCATION + "index.html #homeRowWrapper",
-        latestNewsContainer: CONTENT_LOCATION + "index.html #latestNewsContainer",
+        // latestNewsContainer: CONTENT_LOCATION + "index.html #latestNewsContainer",
+        milestonesAndPastEventsContainer: CONTENT_LOCATION + "index.html #milestonesAndPastEventsContainer",
         banner: DEV_SRC_LOCATION + "homeBanner.jgp"
     },
     ABOUT: {
