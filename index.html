@@ -8,20 +8,6 @@
         <link href="pageStyles/indexStyle.css" rel="stylesheet" type="text/css" />
 
         <style>
-            .container {
-                padding: 80px 120px;
-            }
-            .person {
-                border: 10px solid transparent;
-                margin-bottom: 10px;
-                width: 325px;
-                height: 225px;
-
-            }
-            .person:hover {
-                border-color: #f1f1f1;
-                opacity: 0.7;
-            }
 
         </style>
     </head>
@@ -34,7 +20,7 @@
                 <li class="dropdown" id="homeDrop"><a id="homeButton" href=index.html>Home</a></li>
 
                 <li class="dropdown" id="aboutDrop">
-                    <a href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>
+                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>
                     <!--<a href=index.html class="drop_button clickable"> About</a>-->
                     <div class="drop_content">
                         <a href="content.html" href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)">Our Mission and Vision</a>
@@ -44,12 +30,12 @@
                 </li>
 
                 <li class="dropdown" id="infoDrop">
-                    <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.LANDING)"
+                    <a href='content.html?CONTENT_TABLE.INFORMATION.LANDING'
                        class="drop_button clickable">Information</a>
                     <div class="drop_content">
-                        <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)"
+                        <a href="content.html" onclick="navigate(CONTENT_TABLE.INFORMATION.RESOURCES)"
                            id="resourcesButton">Resources</a>
-                        <a href="content.html" href="javascript:navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
+                        <a href="content.html" onclick="navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
                     </div>
 
                 </li>
@@ -98,34 +84,34 @@
     <div class="container text-center">
         <div class="row">
         <div class="col-sm-4">
-            <a href="team.html#teamInformation">
+            <a href="content.html">
                 <img src="devResources/ourTeam16.jpg" class="img-circle person" alt="Image">
             </a>
         </div>
         <div class="col-sm-4">
-            <a href="activities.html#welcome2016pre">
+            <a href="content.html">
                 <img src="devResources/siteRelease.jpg" class="img-circle person" alt="Image">
             </a>
         </div>
         <div class="col-sm-4">
-            <a href="past.html#handbook2016">
+            <a href="content.html">
                 <img src="devResources/handbookMockup.jpg" class="img-circle person" alt="Image">
             </a>
         </div>
         </div>
         <div class="row">
             <div class="col-sm-4">
-                <a href="activities.html#welcome2016pre">
+                <a href="content.html">
                     <img src="devResources/indexWeWantYou.jpg" class="img-circle person" alt="Image">
                 </a>
             </div>
             <div class="col-sm-4">
-                <a href="past.html#voice2016">
+                <a href="content.html">
                     <img src="devResources/voiceofva.jpg" class="img-circle person" alt="Image">
                 </a>
             </div>
             <div class="col-sm-4">
-                <a href="past.html#cny2016">
+                <a href="content.html">
                     <img src="devResources/indexTemp.jpg" class="img-circle person" alt="Image">
                 </a>
             </div>

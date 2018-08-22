@@ -6,6 +6,11 @@ var CONTENT_LOCATION="pageContents/";
 var DEV_SRC_LOCATION="devResources/";
 var current;
 
+window.onload = function() {
+    current = document.location.toString().split("?")[1]
+    navigate(eval(current));
+};
+
 //Global enum of all pages
 var CONTENT_TABLE = {
     HOME: {
@@ -92,7 +97,7 @@ console.log("Check");
     }
     else if (content == CONTENT_TABLE.INFORMATION.LANDING || content == CONTENT_TABLE.INFORMATION.RESOURCES
         || content == CONTENT_TABLE.INFORMATION.FAQ) {
-
+        // alert("is information")
         $("#sideBarContainer").load(CONTENT_TABLE.INFORMATION.sideBar);
         $("#rowBannerImage").attr("src", CONTENT_TABLE.INFORMATION.banner);
 

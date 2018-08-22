@@ -191,7 +191,7 @@ nav .drop_button.active {
     width: 100%;
     min-height: 250px;
     clip: rect(0px,60px,200px,0px);
-    display: block;
+    /*display: block;*/
 }
 
 .pageImg img{
@@ -322,3 +322,18 @@ footer{
     clear: both;
 }
 
+/*New style on home page*/
+.container {
+    padding: 80px 120px;
+}
+.person {
+    border: 10px solid transparent;
+    margin-bottom: 10px;
+    width: 325px;
+    height: 225px;
+
+}
+.person:hover {
+    border-color: #f1f1f1;
+    opacity: 0.7;
+}
