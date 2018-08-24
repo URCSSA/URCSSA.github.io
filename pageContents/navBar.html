@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="navbar">
+    <nav>
+        <ul>
+            <li class="dropdown" id="homeDrop"><a id="homeButton" href=index.html>Home</a></li>
+
+            <li class="dropdown" id="aboutDrop">
+                <a href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>
+                <div class="drop_content">
+                    <a href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)">Our Mission and Vision</a>
+                    <a href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)">Meet Our Team</a>
+                </div>
+
+            </li>
+
+            <li class="dropdown" id="infoDrop">
+                <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.LANDING)" class="drop_button clickable">Information</a>
+                <div class="drop_content">
+                    <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.RESOURCES)" id="resourcesButton">Resources</a>
+                    <a href="javascript:navigate(CONTENT_TABLE.INFORMATION.FAQ)" id="faqButton">FAQs</a>
+                </div>
+
+            </li>
+
+            <li class="dropdown">
+                <a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.LANDING)" class="drop_button clickable">Activities</a>
+                <div class="drop_content">
+                    <a href="javascript:navigate(CONTENT_TABLE.ACTIVITIES.PAST)"> Past Activities</a>
+                </div>
+
+            </li>
+
+            <li><a href="javascript:navigate(CONTENT_TABLE.CONTACT)" class="clickable">Contact us</a></li>
+
+            <li class="navBarLogo">
+                <a href=index.html><img id="logo1" src="DevResources/cssaLOGO.png" alt="logo1" height="30"/></a>
+            </li>
+        </ul>
+    </nav>
+
+</div>
+<div id="sideBarContainer">
+    <ul>
+        <li><a href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)">About Us</a></li>
+        <li><a href="javascript:navigate(CONTENT_TABLE.ABOUT.TEAM)" >Team</a></li>
+        <li><a href="javascript:navigate(CONTENT_TABLE.ABOUT.MISSION)" >Mission and Vision</a></li>
+    </ul>
+
+</div>
+
+</body>
+</html>

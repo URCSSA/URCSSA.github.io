@@ -1,0 +1,83 @@
+body{
+    font-family: "Avenir","Futura LT Light","Georgia","Garamond","Verdana";
+    color: white;
+}
+@font-face {
+    src: url('DevResources/Futura LT Light.ttf');
+
+}
+
+/*#latestNewsContainer {*/
+    /*display: block;*/
+    /*min-height: 700px;*/
+    /*width: 1060px;*/
+    /*margin: 0 auto;*/
+    /*position: relative;*/
+/*}*/
+
+#milestonesAndPastEventsTitle {
+    /*font-family: Brush Script MT, cursive;*/
+    /*font-size: 14px;*/
+    /*font-style: normal;*/
+    /*font-variant: normal;*/
+    /*font-weight: 500;*/
+    /*line-height: 15.4px;*/
+    display: block;
+    font-family: "Brush Script MT";
+    font-size: 45px;
+    font-weight: normal;
+    color: dimgrey;
+    position: static;
+    top: 18px;
+    text-align: center;
+    min-width: 100%;
+}
+
+.newsBox {
+    color: none;
+    font-family: "Avenir";
+    text-align: bottom;
+    border: 1px solid lightgrey;
+    margin: 15px;
+    /*padding: 5px;*/
+    height: 210px;
+    width: 320px;
+    float: left;
+    overflow: hidden;
+   
+}
+
+.newsBox img {
+    height: auto;
+    width: 100%;
+    /*clip: rect(0px,50px,200px,0px);*/
+    display: block;
+    position: relative;
+}
+
+.newsBox img:hover {
+    opacity: .6;
+}
+
+#primaryContentHomepage {
+    display: block;
+    min-height: 540px;
+    font-family: "Avenir";
+    font-size: 40px;
+    line-height:120%;
+    color: white;
+    position: relative;
+    top: 100px;
+    /*margin-left: 18%;*/
+    text-align: center;
+    min-width: 100%;
+    /*width: 800px;*/
+
+}
+
+#smaller {
+    font-family: "Futura LT Light";
+    font-size: 28px;
+}
+
+
