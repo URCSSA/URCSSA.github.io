@@ -1,15 +1,12 @@
     <!DOCTYPE html>
     <html lang="en">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" content = "no-cache">
         <title> Home - URCSSA </title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" crossorigin="anonymous">
-        <link href="main.css" rel="stylesheet" type="text/css" />
         <link href="pageStyles/indexStyle.css" rel="stylesheet" type="text/css" />
+        <link href="main.css" rel="stylesheet" type="text/css" />
 
-        <style>
-
-        </style>
     </head>
     <body>
 
@@ -20,8 +17,8 @@
                 <li class="dropdown" id="homeDrop"><a id="homeButton" href=index.html>Home</a></li>
 
                 <li class="dropdown" id="aboutDrop">
-                    <a href='content.html?CONTENT_TABLE.ABOUT.LANDING'> About</a>
-                    <!--<a href=index.html class="drop_button clickable"> About</a>-->
+                    <!--<a href="javascript:navigate(CONTENT_TABLE.ABOUT.LANDING)" class="drop_button clickable"> About</a>-->
+                    <a href='content.html?CONTENT_TABLE.ABOUT.LANDING' class='drop_button clickable'> About</a>
                     <div class="drop_content">
                         <a href='content.html?CONTENT_TABLE.ABOUT.MISSION'>Our Mission and Vision</a>
                         <a href='content.html?CONTENT_TABLE.ABOUT.TEAM'>Meet Our Team</a>
@@ -51,7 +48,6 @@
 
                 <li><a href='content.html?CONTENT_TABLE.CONTACT' class="clickable">Contact us</a></li>
 
-
                 <li class="navBarLogo">
                     <a href=index.html><img id="logo1" src="devResources/cssaLOGO.png" alt="logo1" height="30"/></a>
                 </li>
@@ -71,87 +67,58 @@
 
         </div>
 
+
         <div id="primaryContentHomepage">
             CHINESE STUDENTS AND SCHOLARS ASSOCIATION
             <p id="smaller">University of Richmond </p>
         </div>
     </div>
 
+
+
     <!--间距, href direction missing-->
     <div id="milestonesAndPastEventsContainer">
         <div id="milestonesAndPastEventsTitle">
             Milestones and Past Events
-    <div class="container text-center">
-        <div class="row">
-        <div class="col-sm-4">
-            <a href='content.html?CONTENT_TABLE.ABOUT.LANDING'>
-                <img src="devResources/ourTeam16.jpg" class="img-circle person" alt="Image">
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a href="index.html">
-                <img src="devResources/siteRelease.jpg" class="img-circle person" alt="Image">
-            </a>
-        </div>
-        <div class="col-sm-4">
-            <a onclick=window.open('https://drive.google.com/file/d/0B8XLxRHAcll0UmMtQmdfU0E1eHc/view?usp=sharing')>
-                <img src="devResources/handbookMockup.jpg" class="img-circle person" alt="Image">
-            </a>
-        </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-4">
-                <a href="content.html">
-                    <img src="devResources/indexWeWantYou.jpg" class="img-circle person" alt="Image">
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href="content.html">
-                    <img src="devResources/voiceofva.jpg" class="img-circle person" alt="Image">
-                </a>
-            </div>
-            <div class="col-sm-4">
-                <a href="content.html">
-                    <img src="devResources/indexTemp.jpg" class="img-circle person" alt="Image">
-                </a>
+            <div class="container text-center">
+
+                <div class="homeGalleryRow">
+                <div class="homeGalleryColumn">
+                    <a href='content.html?CONTENT_TABLE.ABOUT.LANDING'>
+                        <img src="devResources/ourTeam16.jpg" class="img-circle person" alt="Image">
+                    </a>
+                </div>
+                <div class="homeGalleryColumn">
+                    <a href="index.html">
+                        <img src="devResources/siteRelease.jpg" class="img-circle person" alt="Image">
+                    </a>
+                </div>
+                <div class="homeGalleryColumn">
+                    <a onclick=window.open('https://drive.google.com/file/d/0B8XLxRHAcll0UmMtQmdfU0E1eHc/view?usp=sharing')>
+                        <img src="devResources/handbookMockup.jpg" class="img-circle person" alt="Image">
+                    </a>
+                </div>
+                </div>
+                <div class="homeGalleryRow">
+                    <div class="homeGalleryColumn">
+                        <a href="content.html">
+                            <img src="devResources/indexWeWantYou.jpg" class="img-circle person" alt="Image">
+                        </a>
+                    </div>
+                    <div class="homeGalleryColumn">
+                        <a href="content.html">
+                            <img src="devResources/voiceofva.jpg" class="img-circle person" alt="Image">
+                        </a>
+                    </div>
+                    <div class="homeGalleryColumn">
+                        <a href="content.html">
+                            <img src="devResources/indexTemp.jpg" class="img-circle person" alt="Image">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    </div>
-    </div>
-
-
-    <!--<div id="latestNewsContainer">-->
-        <!--<div id="latestNewsTitle">-->
-            <!--Latest Events-->
-        <!--</div>-->
-
-        <!--<div class="newsBox">-->
-            <!--<a href="team.html#teamInformation"><img src="devResources/ourTeam16.jpg"/></a>-->
-        <!--</div>-->
-
-        <!--<div class="newsBox">-->
-            <!--<a href="activities.html#welcome2016pre"><img src="devResources/indexWeWantYou.jpg"/></a>-->
-        <!--</div>-->
-
-        <!--<div class="newsBox">-->
-            <!--<a href="past.html#release1.0"><img src="devResources/siteRelease.jpg"/></a>-->
-        <!--</div>-->
-        <!--<div class="newsBox">-->
-            <!--<a href="past.html#handbook2016"><img src="devResources/handbookMockup.jpg" /></a>-->
-
-        <!--</div>-->
-        <!--<div class="newsBox">-->
-            <!--<a href="past.html#voice2016"><img src="devResources/voiceofva.jpg" /></a>-->
-        <!--</div>-->
-        <!--<div class="newsBox">-->
-            <!--<a href="past.html#cny2016"><img src="devResources/indexTemp.jpg" /></a>-->
-        <!--</div>-->
-
-
-    <!--</div>-->
-
-
 
 
     <div class="footer">
@@ -218,8 +185,9 @@
     <script src="showOnScroll.js"></script>-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="getMainContent.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 
     </body>
     </html>
