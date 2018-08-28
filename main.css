@@ -184,6 +184,20 @@ nav .drop_button.active {
 
 }
 
+.homeGalleryRow {
+    display: flex;
+}
+
+.homeGalleryColumn {
+    flex: 33.33%;
+    padding: 5px;
+}
+
+.homeGalleryColumn img {
+    border-radius: 50%;
+}
+
+
 .majorBannerImg img{
     /*height: 620px;*/
     height: auto;
@@ -193,6 +207,19 @@ nav .drop_button.active {
     clip: rect(0px,60px,200px,0px);
     /*display: block;*/
 }
+
+/*.majorBannerImg img{*/
+    /*!*height: 620px;*!*/
+    /*height: auto;*/
+    /*max-height: 620px;*/
+    /*width: 100%;*/
+    /*min-height: 250px;*/
+    /*clip: rect(0px,60px,200px,0px);*/
+    /*!*display: block;*!*/
+/*}*/
+
+
+
 
 .pageImg img{
     height: auto;
